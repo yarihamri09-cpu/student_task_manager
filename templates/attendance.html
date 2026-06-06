@@ -2,9 +2,7 @@
     name="student_id"
     class="form-control"
 >
-{% extends 'layout.html' %}
 
-{% block content %}
 
     {% for student in students %}
 
@@ -19,6 +17,9 @@
 
 </select> -->
 
+{% extends 'layout.html' %}
+
+{% block content %}
 <h2>Mark Attendance</h2>
 
     <form action="/save_attendance" method="POST">
