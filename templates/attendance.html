@@ -2,6 +2,9 @@
     name="student_id"
     class="form-control"
 >
+{% extends 'layout.html' %}
+
+{% block content %}
 
     {% for student in students %}
 
@@ -57,3 +60,4 @@
         </button>
 
     </form>
+    {% endblock %}
