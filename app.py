@@ -31,6 +31,9 @@ def login():
 
         user = cursor.fetchone()
 
+
+        cursor.fetchall()   # consume any remaining rows
+
         cursor.close()
         connection.close()
 
